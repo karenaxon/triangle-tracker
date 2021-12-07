@@ -17,7 +17,7 @@ namespace TriangleTracker
     public bool CheckTriangle()
     {
       if(Side1 == Side2 && Side1 == Side3 && Side2 == Side3){
-        return false;
+        return true;
       }
       return false;
     }
