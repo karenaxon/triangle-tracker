@@ -19,7 +19,9 @@ namespace TriangleTracker
       if(Side1 == Side2 && Side1 == Side3 && Side2 == Side3){
         return "Your triangle is Equilateral";
       } else if(Side1 == Side2 || Side2 == Side3 || Side1 == Side3){
-        return "";
+        return "Your triangle is Isosceles";
+      } else if(Side1+Side2 <= Side3 || Side2+Side3 <= Side1 || Side1+Side3 <= Side2){
+        return "This is not a triangle";
       }
       return "fill in later";
     }

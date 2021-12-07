@@ -28,5 +28,12 @@ namespace TriangleTracker.Tests
       Assert.AreEqual("Your triangle is Isosceles", triangle1.CheckTriangle());
     }
 
+    [TestMethod]
+    public void CheckTriangle_IsNotaTriangle_NotTriangle()
+    {
+      Triangle triangle1 = new Triangle(2,3,6);
+      Assert.AreEqual("This is not a triangle", triangle1.CheckTriangle());
+    }
+
   }
 }
