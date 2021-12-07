@@ -22,8 +22,10 @@ namespace TriangleTracker
         return "Your triangle is Isosceles";
       } else if(Side1+Side2 <= Side3 || Side2+Side3 <= Side1 || Side1+Side3 <= Side2){
         return "This is not a triangle";
+      } else if(Side1+Side2 >= Side3 || Side2+Side3 >= Side1 || Side1+Side3 >= Side2){
+      return "Your triangle is Scalene";
       }
-      return "fill in later";
+      return "Try Again";
     }
 
   }

@@ -31,9 +31,15 @@ namespace TriangleTracker.Tests
     [TestMethod]
     public void CheckTriangle_IsNotaTriangle_NotTriangle()
     {
-      Triangle triangle1 = new Triangle(2,3,6);
+      Triangle triangle1 = new Triangle(1,3,4);
       Assert.AreEqual("This is not a triangle", triangle1.CheckTriangle());
     }
 
+    [TestMethod]
+    public void CheckTriangle_IsScalene_Scalene()
+    {
+      Triangle triangle1 = new Triangle(2,3,4);
+      Assert.AreEqual("Your triangle is Scalene", triangle1.CheckTriangle());
+    }
   }
 }
