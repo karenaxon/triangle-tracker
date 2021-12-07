@@ -14,12 +14,14 @@ namespace TriangleTracker
       Side3 = side3;
     }
 
-    public bool CheckTriangle()
+    public string CheckTriangle()
     {
       if(Side1 == Side2 && Side1 == Side3 && Side2 == Side3){
-        return true;
+        return "Your triangle is Equilateral";
+      } else if(Side1 == Side2 || Side2 == Side3 || Side1 == Side3){
+        return "";
       }
-      return false;
+      return "fill in later";
     }
 
   }

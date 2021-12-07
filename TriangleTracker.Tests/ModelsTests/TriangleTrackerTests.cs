@@ -15,10 +15,17 @@ namespace TriangleTracker.Tests
     }
 
     [TestMethod]
-    public void CheckTriangle_IsEquilateral_True()
+    public void CheckTriangle_IsEquilateral_Equil()
     {
       Triangle triangle1 = new Triangle(3, 3, 3);
-      Assert.AreEqual(true, triangle1.CheckTriangle());
+      Assert.AreEqual("Your triangle is Equilateral", triangle1.CheckTriangle());
+    }
+
+    [TestMethod]
+    public void CheckTriangle_IsIsosceles_Isosceles()
+    {
+      Triangle triangle1 = new Triangle(3,3,4);
+      Assert.AreEqual("Your triangle is Isosceles", triangle1.CheckTriangle());
     }
 
   }
