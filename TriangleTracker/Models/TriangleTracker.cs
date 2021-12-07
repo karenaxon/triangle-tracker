@@ -13,5 +13,14 @@ namespace TriangleTracker
       Side2 = side2;
       Side3 = side3;
     }
+
+    public bool CheckTriangle()
+    {
+      if(Side1 == Side2 && Side1 == Side3 && Side2 == Side3){
+        return false;
+      }
+      return false;
+    }
+
   }
 }

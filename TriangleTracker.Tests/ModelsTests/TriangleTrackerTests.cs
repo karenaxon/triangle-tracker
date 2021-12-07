@@ -14,5 +14,12 @@ namespace TriangleTracker.Tests
       Assert.AreEqual(2, triangle1.Side2);
     }
 
+    [TestMethod]
+    public void CheckTriangle_IsEquilateral_True()
+    {
+      Triangle triangle1 = new Triangle(3, 3, 3);
+      Assert.AreEqual(true, triangle1.CheckTriangle());
+    }
+
   }
 }
