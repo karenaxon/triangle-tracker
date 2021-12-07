@@ -17,6 +17,6 @@ public class Program
     side3 = int.Parse(Console.ReadLine());
 
     Triangle triangle1 = new Triangle(side1, side2, side3);
-    
+    Console.WriteLine(triangle1.CheckTriangle());
   }
 }
